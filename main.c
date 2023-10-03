@@ -46,6 +46,17 @@ void displaySteps(int maxId) {
     }
 
 }
+void getBuildingInfo(int x, int y) {
+    if (x >= 0 && x < 10 && y >= 0 && y < 10) {
+        if (grid[x][y].isbuilt) {
+            printf("A Building from type '%s' was Built at: (%d, %d).\n", grid[x][y].buildingType, x, y);
+        } else {
+            printf("Theres not any Building at (%d, %d).\n", x, y);
+        }
+    } else {
+        printf("Invalidated position.\n");
+    }
+}
 
 
 int main(){
@@ -58,27 +69,33 @@ int main(){
         printf("\nMenu:\n");
         printf("1. Build something\n");
         printf("2. Show Grid\n");
+        printf("3. Show more informations\n");
         printf("0. Leave\n");
         printf("Choice : ");
         scanf("%d", &choice);
 
-        if(choice == 1 ) {
+        if (choice == 1) {
 
             printf("Enter a position (x y) : ");
             if (scanf("%d %d", &x, &y) != 2) {
 
                 printf("Error, Try again\n");
-                break;
             }
 
             printf("Enter Building type : ");
             scanf("%s", buildingType);
             buildBuilding(x, y, buildingType);
-            break;
-        }else if(choice == 2) {
+
+        } else if (choice == 2) {
             displayGrid();
-            break;
-        }else if(choice == 0){
+        }else if (choice == 3){
+
+            printf("Enter the position (x y) for more informations : ");
+            if(scanf("%d %d", &x, &y) != 2) {
+                printf("Invalidated position\n");
+            }
+
+    }else if(choice == 0){
                 printf("Ciao !\n");
             break;
         }else{
