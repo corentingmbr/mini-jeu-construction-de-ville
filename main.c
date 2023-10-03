@@ -55,10 +55,41 @@ int main(){
         for (int j = 0; j < 10; ++j) {
             grid[i][j].isbuilt = 0;
         }
-    }
+        printf("\nMenu:\n");
+        printf("1. Build something\n");
+        printf("2. Show Grid\n");
+        printf("0. Leave\n");
+        printf("Choice : ");
+        scanf("%d", &choice);
+
+        if(choice == 1 ) {
+
+            printf("Enter a position (x y) : ");
+            if (scanf("%d %d", &x, &y) != 2) {
+
+                printf("Error, Try again\n");
+                break;
+            }
+
+            printf("Enter Building type : ");
+            scanf("%s", buildingType);
+            buildBuilding(x, y, buildingType);
+            break;
+        }else if(choice == 2) {
+            displayGrid();
+            break;
+        }else if(choice == 0){
+                printf("Ciao !\n");
+            break;
+        }else{
+            printf("Invalidated Choice try again !\n");
+        }
 
 
 
-    printf("Hello, World!\n");
+
+    }while(choice != 0);
+
+
     return 0;
 }
