@@ -1,0 +1,3 @@
+C:/Users/coren/OneDrive/Documents/GitHub/mini-jeu-construction-de-ville/cmake-build-debug/CMakeFiles/mini_jeu_construction_de_ville.dir
+C:/Users/coren/OneDrive/Documents/GitHub/mini-jeu-construction-de-ville/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/coren/OneDrive/Documents/GitHub/mini-jeu-construction-de-ville/cmake-build-debug/CMakeFiles/rebuild_cache.dir

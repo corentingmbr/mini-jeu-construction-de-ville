@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "mini_jeu_construction_de_ville",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "mini_jeu_construction_de_ville::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mini_jeu_construction_de_ville-Debug-ff1502173ecf00b4a78f.json",
+					"name" : "mini_jeu_construction_de_ville",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/coren/OneDrive/Documents/GitHub/mini-jeu-construction-de-ville/cmake-build-debug",
+		"source" : "C:/Users/coren/OneDrive/Documents/GitHub/mini-jeu-construction-de-ville"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}
